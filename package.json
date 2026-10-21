@@ -1,0 +1,46 @@
+{
+  "name": "moodswipe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && tsc -p tsconfig.worker.json && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "npm run test && npm run build",
+    "worker:dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "package": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/lora": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "@fontsource/oswald": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "idb": "^8.0.4",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@cloudflare/workers-types": "^5.20261021.1",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "fake-indexeddb": "^6.2.6",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5",
+    "wrangler": "^4.151.3"
+  }
+}

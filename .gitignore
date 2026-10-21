@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+.wrangler/
+playwright-report/
+test-results/
+*.tsbuildinfo
+artifacts/*.zip
+
+artifacts/worker/
+artifacts/mood-*.png
