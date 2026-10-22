@@ -1,0 +1,146 @@
+[
+  {
+    "photo": "city",
+    "font": "Oswald",
+    "region": "lower",
+    "alignment": "center",
+    "scrim": 0.08,
+    "size": 126,
+    "caption": "My retirement plan is to become a cautionary tale with a garden."
+  },
+  {
+    "photo": "coast",
+    "font": "Space Grotesk",
+    "region": "top",
+    "alignment": "right",
+    "scrim": 0,
+    "size": 108,
+    "caption": "The afterlife can wait. I still need to cancel a free trial."
+  },
+  {
+    "photo": "forest",
+    "font": "DM Sans",
+    "region": "lower",
+    "alignment": "center",
+    "scrim": 0.12,
+    "size": 86,
+    "caption": "Cleaned the apartment in case something happens to me. Still can't have people judging."
+  },
+  {
+    "photo": "stars",
+    "font": "Barlow Condensed",
+    "region": "middle",
+    "alignment": "left",
+    "scrim": 0.08,
+    "size": 112,
+    "caption": "I've done the inner work. Unfortunately, the landlord wants money."
+  },
+  {
+    "photo": "street",
+    "font": "Lora",
+    "region": "top",
+    "alignment": "left",
+    "scrim": 0,
+    "size": 110,
+    "caption": "I asked about job security. They sent me a password reset."
+  },
+  {
+    "photo": "mist",
+    "font": "DM Sans",
+    "region": "lower",
+    "alignment": "left",
+    "scrim": 0,
+    "size": 102,
+    "caption": "Bought a lifetime warranty. For once, a company and I agree on the odds."
+  },
+  {
+    "photo": "lake",
+    "font": "Barlow Condensed",
+    "region": "top",
+    "alignment": "center",
+    "scrim": 0,
+    "size": 110,
+    "caption": "We promised we'd grow old together. Neither of us budgeted for who we'd become."
+  },
+  {
+    "photo": "coffee",
+    "font": "Space Grotesk",
+    "region": "middle",
+    "alignment": "right",
+    "scrim": 0.36,
+    "size": 86,
+    "caption": "Being an emergency contact is a lot of responsibility for someone who screens calls."
+  },
+  {
+    "photo": "waterfall",
+    "font": "Lora",
+    "region": "lower",
+    "alignment": "left",
+    "scrim": 0,
+    "size": 98,
+    "caption": "We stayed together for the dog. The dog has since moved on emotionally."
+  },
+  {
+    "photo": "woodland",
+    "font": "Barlow Condensed",
+    "region": "top",
+    "alignment": "left",
+    "scrim": 0,
+    "size": 124,
+    "caption": "My therapist says I need boundaries. My bank says I've reached them."
+  },
+  {
+    "photo": "cafe",
+    "font": "DM Sans",
+    "region": "lower",
+    "alignment": "left",
+    "scrim": 0.4,
+    "size": 104,
+    "caption": "The bank believes in my future. That's why it wants thirty years of it."
+  },
+  {
+    "photo": "galaxy",
+    "font": "Lora",
+    "region": "middle",
+    "alignment": "center",
+    "scrim": 0,
+    "size": 98,
+    "caption": "Got a “we miss you” email from a shop. Nice to know my absence has a price."
+  },
+  {
+    "photo": "sunlit-woods",
+    "font": "Barlow Condensed",
+    "region": "top",
+    "alignment": "center",
+    "scrim": 0,
+    "size": 138,
+    "caption": "It turns out “this too shall pass” also applies to paychecks."
+  },
+  {
+    "photo": "peaks",
+    "font": "Oswald",
+    "region": "top",
+    "alignment": "center",
+    "scrim": 0,
+    "size": 126,
+    "caption": "The afterlife can wait. I still need to cancel a free trial."
+  },
+  {
+    "photo": "redwoods",
+    "font": "Lora",
+    "region": "lower",
+    "alignment": "left",
+    "scrim": 0,
+    "size": 90,
+    "caption": "Cleaned the apartment in case something happens to me. Still can't have people judging."
+  },
+  {
+    "photo": "ridge",
+    "font": "DM Sans",
+    "region": "middle",
+    "alignment": "right",
+    "scrim": 0,
+    "size": 104,
+    "caption": "I've done the inner work. Unfortunately, the landlord wants money."
+  }
+]

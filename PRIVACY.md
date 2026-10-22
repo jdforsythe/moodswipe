@@ -2,7 +2,7 @@
 
 MoodSwipe requires no account and includes no analytics, advertising trackers, or cloud gallery.
 
-**On your device:** your filter settings, recent caption IDs, and dismissed memes remain in browser storage. A rejected meme includes its rendered PNG, caption, photo credit, layout, settings, and timestamp. History is bounded to 100 cards, 100 MB, and 30 days. Clear Rejected removes that history; clearing this website’s storage also removes preferences and the offline cache. Browsers may evict storage independently. There is no cross-device sync or server backup.
+**On your device:** your filter settings, recent caption IDs, recent photo/type choices, and dismissed memes remain in browser storage. A rejected meme includes its rendered PNG, caption, photo credit, layout, settings, and timestamp. History is bounded to 100 cards, 100 MB, and 30 days. Clear Rejected removes that history; clearing this website’s storage also removes preferences and the offline cache. Browsers may evict storage independently. There is no cross-device sync or server backup.
 
 **Exports:** Save and Share pass the composed image to your browser or operating system. A selected sharing application handles it under its own privacy policy. MoodSwipe does not learn which social app ultimately stored or published it. A completed browser download does not verify a camera-roll write.
 

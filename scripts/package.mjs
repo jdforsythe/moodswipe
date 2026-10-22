@@ -1,4 +1,4 @@
-import { mkdir, rm, stat } from "node:fs/promises";
+import { mkdir, readdir, rm, stat } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 await mkdir("artifacts", { recursive: true });
 await Promise.all(
@@ -41,12 +41,21 @@ const roots = [
   "OPERATOR.md",
 ];
 for (const path of [
+  "artifacts/dark-humor-variety.png",
+  "artifacts/dark-humor-variety.json",
+  "artifacts/caption-evaluation.json",
   "artifacts/production-android-chromium.png",
   "artifacts/production-iphone-webkit.png",
   "artifacts/live-ai-android-chromium.png",
   "artifacts/live-ai-loading.png",
+  "artifacts/live-ai-result.json",
 ]) {
   if (await stat(path).catch(() => null)) roots.push(path);
+}
+for (const name of await readdir("artifacts")) {
+  const path = `artifacts/${name}`;
+  if (/^caption-evaluation.*\.json$/.test(name) && !roots.includes(path))
+    roots.push(path);
 }
 execFileSync("zip", ["-qr", "artifacts/moodswipe-source.zip", ...roots]);
 for (const name of ["moodswipe-static.zip", "moodswipe-source.zip"])

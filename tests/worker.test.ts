@@ -34,6 +34,19 @@ const req = () =>
     body: JSON.stringify({ params: DEFAULT_PARAMS }),
   });
 describe("Worker boundary", () => {
+  it("expires pre-update editorial batches without resetting the daily attempt ledger", async () => {
+    const pool = new CandidatePool(mockState(), { AI_ENABLED: "false" } as Env);
+    await pool.initialized;
+    pool.state.editorialVersion = 1;
+    pool.state.aiCalls = 123;
+    pool.state.pool = [
+      { caption: { text: "Lake of broken mirrors" }, uses: 0 },
+    ] as typeof pool.state.pool;
+    const body = await (await pool.fetch(req())).json();
+    expect(body).toMatchObject({ captions: [], mode: "local" });
+    expect(pool.state.pool).toEqual([]);
+    expect(pool.state.aiCalls).toBe(123);
+  });
   it("returns a short retry for pacing instead of a fifteen-minute fallback", async () => {
     const ai = { run: vi.fn() };
     const pool = new CandidatePool(mockState(), {

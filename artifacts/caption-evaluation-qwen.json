@@ -1,0 +1,355 @@
+{
+  "model": "@cf/qwen/qwen3-30b-a3b-fp8",
+  "elapsedMs": 7608,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4
+  },
+  "results": [
+    {
+      "raw": {
+        "caption": "A wellness email arrives after work. My calendar says I'm dead.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "low angle",
+        "visualKeywords": [
+          "city",
+          "sky",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "routine",
+          "corporate",
+          "irony"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-f92478c2",
+          "text": "A wellness email arrives after work. My calendar says I'm dead.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "low angle",
+          "visualKeywords": [
+            "city",
+            "sky",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315947,
+          "conceptTags": [
+            "routine",
+            "corporate",
+            "irony"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Group chat agrees to meet. No date, but the plan is solid.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "wide shot",
+        "visualKeywords": [
+          "coffee",
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "social",
+          "uncertainty",
+          "negotiation"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-66762a78",
+          "text": "Group chat agrees to meet. No date, but the plan is solid.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "wide shot",
+          "visualKeywords": [
+            "coffee",
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "social",
+            "uncertainty",
+            "negotiation"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "App congratulates on a year of payments. I'm still waiting for the promotion.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "close-up",
+        "visualKeywords": [
+          "city",
+          "architecture",
+          "coffee"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "financial",
+          "disappointment",
+          "system"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-2547241f",
+          "text": "App congratulates on a year of payments. I'm still waiting for the promotion.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "close-up",
+          "visualKeywords": [
+            "city",
+            "architecture",
+            "coffee"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "financial",
+            "disappointment",
+            "system"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Party host asks if I'm having fun. I'm not sure if I'm the guest or the guest star.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "medium shot",
+        "visualKeywords": [
+          "party",
+          "architecture",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "social",
+          "identity",
+          "performance"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-26dd26f2",
+          "text": "Party host asks if I'm having fun. I'm not sure if I'm the guest or the guest star.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "medium shot",
+          "visualKeywords": [
+            "party",
+            "architecture",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "social",
+            "identity",
+            "performance"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Subscription pause with no cancellation button. The system is more committed than I am.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "overhead shot",
+        "visualKeywords": [
+          "city",
+          "architecture",
+          "coffee"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "corporate",
+          "control",
+          "frustration"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-ee5bac6d",
+          "text": "Subscription pause with no cancellation button. The system is more committed than I am.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "overhead shot",
+          "visualKeywords": [
+            "city",
+            "architecture",
+            "coffee"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "corporate",
+            "control",
+            "frustration"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Performance review praises my endurance. I'm not sure if it's a compliment or a warning.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "medium shot",
+        "visualKeywords": [
+          "work",
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "workplace",
+          "pressure",
+          "management"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-b22e15d3",
+          "text": "Performance review praises my endurance. I'm not sure if it's a compliment or a warning.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "medium shot",
+          "visualKeywords": [
+            "work",
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "workplace",
+            "pressure",
+            "management"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Loyalty card outlasts a friendship. I wonder who's more loyal, the card or the friend.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "close-up",
+        "visualKeywords": [
+          "coffee",
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "friendship",
+          "loyalty",
+          "neglect"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-ac24617b",
+          "text": "Loyalty card outlasts a friendship. I wonder who's more loyal, the card or the friend.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "close-up",
+          "visualKeywords": [
+            "coffee",
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "friendship",
+            "loyalty",
+            "neglect"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Rent increase with a friendly greeting. The landlord must be a fan of my financial struggles.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "wide shot",
+        "visualKeywords": [
+          "city",
+          "architecture",
+          "work"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "finance",
+          "housing",
+          "system"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-9066438",
+          "text": "Rent increase with a friendly greeting. The landlord must be a fan of my financial struggles.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "wide shot",
+          "visualKeywords": [
+            "city",
+            "architecture",
+            "work"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676315948,
+          "conceptTags": [
+            "finance",
+            "housing",
+            "system"
+          ]
+        }
+      }
+    }
+  ]
+}

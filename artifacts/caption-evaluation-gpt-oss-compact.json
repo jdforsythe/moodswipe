@@ -1,0 +1,342 @@
+{
+  "model": "@cf/openai/gpt-oss-120b",
+  "elapsedMs": 13626,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4,
+    "aesthetic": "Cinematic",
+    "random": false
+  },
+  "promptVariant": "compact",
+  "results": [
+    {
+      "raw": {
+        "caption": "My office's wellness program includes a free yoga mat—right next to the “no overtime” sign we never see.",
+        "mood": "dark",
+        "topic": "Work/Burnout",
+        "intensity": 4,
+        "technique": "ironic juxtaposition",
+        "visualKeywords": [
+          "architecture",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "corporate wellness",
+          "silent exploitation"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-81e00a30",
+          "text": "My office's wellness program includes a free yoga mat—right next to the “no overtime” sign we never see.",
+          "mood": "dark",
+          "topic": "Work/Burnout",
+          "intensity": 4,
+          "technique": "ironic juxtaposition",
+          "visualKeywords": [
+            "architecture",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691121797,
+          "conceptTags": [
+            "corporate wellness",
+            "silent exploitation"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "I set a budget for groceries; the grocery store set a budget for my sanity, and both went bankrupt.",
+        "mood": "dark",
+        "topic": "Everyday",
+        "intensity": 4,
+        "technique": "subverted expectation",
+        "visualKeywords": [
+          "building",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "middle",
+        "conceptTags": [
+          "inflation",
+          "consumer fatigue"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-9557b621",
+          "text": "I set a budget for groceries; the grocery store set a budget for my sanity, and both went bankrupt.",
+          "mood": "dark",
+          "topic": "Everyday",
+          "intensity": 4,
+          "technique": "subverted expectation",
+          "visualKeywords": [
+            "building",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "middle",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "inflation",
+            "consumer fatigue"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "My therapist charges per session; I’m paying extra for the free “you’ll never change” follow‑up call.",
+        "mood": "dark",
+        "topic": "Relationships",
+        "intensity": 4,
+        "technique": "dry sarcasm",
+        "visualKeywords": [
+          "coffee",
+          "trees"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "lower",
+        "conceptTags": [
+          "mental health",
+          "profit motive"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-c4b42a70",
+          "text": "My therapist charges per session; I’m paying extra for the free “you’ll never change” follow‑up call.",
+          "mood": "dark",
+          "topic": "Relationships",
+          "intensity": 4,
+          "technique": "dry sarcasm",
+          "visualKeywords": [
+            "coffee",
+            "trees"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "lower",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "mental health",
+            "profit motive"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Retirement plans promise you’ll be comfortable; they just mean you’ll comfortably watch your savings dissolve into dust.",
+        "mood": "dark",
+        "topic": "Work/Burnout",
+        "intensity": 4,
+        "technique": "bittersweet irony",
+        "visualKeywords": [
+          "desert",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "middle",
+        "conceptTags": [
+          "financial planning",
+          "aging"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-d752c3b7",
+          "text": "Retirement plans promise you’ll be comfortable; they just mean you’ll comfortably watch your savings dissolve into dust.",
+          "mood": "dark",
+          "topic": "Work/Burnout",
+          "intensity": 4,
+          "technique": "bittersweet irony",
+          "visualKeywords": [
+            "desert",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "middle",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "financial planning",
+            "aging"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Our HR handbook lists 12 benefits; the 13th is “the guilt of leaving before you’re needed.”",
+        "mood": "dark",
+        "topic": "Work/Burnout",
+        "intensity": 4,
+        "technique": "deadpan exaggeration",
+        "visualKeywords": [
+          "office",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "employee retention",
+          "emotional labor"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-3dba5fbb",
+          "text": "Our HR handbook lists 12 benefits; the 13th is “the guilt of leaving before you’re needed.”",
+          "mood": "dark",
+          "topic": "Work/Burnout",
+          "intensity": 4,
+          "technique": "deadpan exaggeration",
+          "visualKeywords": [
+            "office",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "employee retention",
+            "emotional labor"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "I told my partner I’m allergic to drama; we now both sneeze whenever the Wi‑Fi drops.",
+        "mood": "dark",
+        "topic": "Relationships",
+        "intensity": 4,
+        "technique": "dry observation",
+        "visualKeywords": [
+          "coffee",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "lower",
+        "conceptTags": [
+          "modern romance",
+          "digital dependence"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-11bc4d1b",
+          "text": "I told my partner I’m allergic to drama; we now both sneeze whenever the Wi‑Fi drops.",
+          "mood": "dark",
+          "topic": "Relationships",
+          "intensity": 4,
+          "technique": "dry observation",
+          "visualKeywords": [
+            "coffee",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "lower",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "modern romance",
+            "digital dependence"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "The bank’s “flexible loan options” really mean they’ll stretch your credit until it snaps like cheap rope.",
+        "mood": "dark",
+        "topic": "Everyday",
+        "intensity": 4,
+        "technique": "sarcastic metaphor",
+        "visualKeywords": [
+          "building",
+          "water"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "middle",
+        "conceptTags": [
+          "debt",
+          "consumer trap"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-4a74def3",
+          "text": "The bank’s “flexible loan options” really mean they’ll stretch your credit until it snaps like cheap rope.",
+          "mood": "dark",
+          "topic": "Everyday",
+          "intensity": 4,
+          "technique": "sarcastic metaphor",
+          "visualKeywords": [
+            "building",
+            "water"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "middle",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "debt",
+            "consumer trap"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "I bought a smartwatch to track steps; now it tracks my heart rate as it flatlines from stress.",
+        "mood": "dark",
+        "topic": "Everyday",
+        "intensity": 4,
+        "technique": "grim twist",
+        "visualKeywords": [
+          "mountain",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "tech anxiety",
+          "health monitoring"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-c0b7849",
+          "text": "I bought a smartwatch to track steps; now it tracks my heart rate as it flatlines from stress.",
+          "mood": "dark",
+          "topic": "Everyday",
+          "intensity": 4,
+          "technique": "grim twist",
+          "visualKeywords": [
+            "mountain",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691121798,
+          "conceptTags": [
+            "tech anxiety",
+            "health monitoring"
+          ]
+        }
+      }
+    }
+  ]
+}

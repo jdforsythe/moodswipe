@@ -1,0 +1,342 @@
+{
+  "model": "@cf/qwen/qwen3-30b-a3b-fp8",
+  "elapsedMs": 6280,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4,
+    "aesthetic": "Cinematic",
+    "random": false
+  },
+  "promptVariant": "concise-editorial",
+  "results": [
+    {
+      "raw": {
+        "caption": "The HR policy says we're all in this together. I'm not sure they mean the same thing.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "black and white",
+        "visualKeywords": [
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "corporate culture",
+          "mortality",
+          "institutional hypocrisy"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-a89e2a0b",
+          "text": "The HR policy says we're all in this together. I'm not sure they mean the same thing.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "black and white",
+          "visualKeywords": [
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "corporate culture",
+            "mortality",
+            "institutional hypocrisy"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "I filled out the advance directive. Now I have to fill out the advance apology.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "low angle",
+        "visualKeywords": [
+          "building",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "aging",
+          "legal documents",
+          "surrealism"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-d2f1eaff",
+          "text": "I filled out the advance directive. Now I have to fill out the advance apology.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "low angle",
+          "visualKeywords": [
+            "building",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "aging",
+            "legal documents",
+            "surrealism"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "They said my 401(k) was a retirement plan. Turns out it's a life insurance policy I can't afford.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "high contrast",
+        "visualKeywords": [
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "financial precarity",
+          "corporate deception",
+          "irony"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-63c42740",
+          "text": "They said my 401(k) was a retirement plan. Turns out it's a life insurance policy I can't afford.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "high contrast",
+          "visualKeywords": [
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "financial precarity",
+            "corporate deception",
+            "irony"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "My mom says I'm the responsible one. She hasn't met my bank statement.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "wide angle",
+        "visualKeywords": [
+          "coffee",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "family obligations",
+          "financial stress",
+          "humor"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-4214d05a",
+          "text": "My mom says I'm the responsible one. She hasn't met my bank statement.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "wide angle",
+          "visualKeywords": [
+            "coffee",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "family obligations",
+            "financial stress",
+            "humor"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "The funeral home said they could handle anything. I'm not sure they meant the funeral.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "long exposure",
+        "visualKeywords": [
+          "lake",
+          "water"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "mortality",
+          "institutional failure",
+          "surrealism"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-cc8d52a7",
+          "text": "The funeral home said they could handle anything. I'm not sure they meant the funeral.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "long exposure",
+          "visualKeywords": [
+            "lake",
+            "water"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "mortality",
+            "institutional failure",
+            "surrealism"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "They promised me a career, not a waiting room. I'm still waiting for the brochure.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "shallow depth of field",
+        "visualKeywords": [
+          "city",
+          "architecture"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "corporate disposability",
+          "dreams vs reality",
+          "irony"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-8de5d034",
+          "text": "They promised me a career, not a waiting room. I'm still waiting for the brochure.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "shallow depth of field",
+          "visualKeywords": [
+            "city",
+            "architecture"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "corporate disposability",
+            "dreams vs reality",
+            "irony"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "I signed the consent form. Turns out I was consenting to my own obsolescence.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "high dynamic range",
+        "visualKeywords": [
+          "forest",
+          "trees"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "corporate culture",
+          "aging",
+          "existentialism"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-d36c01e7",
+          "text": "I signed the consent form. Turns out I was consenting to my own obsolescence.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "high dynamic range",
+          "visualKeywords": [
+            "forest",
+            "trees"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "corporate culture",
+            "aging",
+            "existentialism"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "The estate agent said the house had potential. I didn't realize it meant my future.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "low key lighting",
+        "visualKeywords": [
+          "building",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "financial precarity",
+          "life decisions",
+          "irony"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-a357e513",
+          "text": "The estate agent said the house had potential. I didn't realize it meant my future.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "low key lighting",
+          "visualKeywords": [
+            "building",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792691190399,
+          "conceptTags": [
+            "financial precarity",
+            "life decisions",
+            "irony"
+          ]
+        }
+      }
+    }
+  ]
+}

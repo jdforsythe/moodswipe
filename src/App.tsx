@@ -255,6 +255,13 @@ export default function App() {
               data-card-id={card.id}
               data-caption-id={card.caption.id}
               data-source={card.caption.source}
+              data-photo-id={card.photo.id}
+              data-type-style={card.layout.style}
+              data-font={card.layout.font}
+              data-region={card.layout.region}
+              data-alignment={card.layout.alignment}
+              data-scrim={card.layout.scrim}
+              data-font-size={card.layout.fontSize}
               tabIndex={0}
               aria-label={`${view === "rejected" ? "Rejected meme" : "Meme"}: ${card.caption.text}`}
               aria-describedby="gesture-help"

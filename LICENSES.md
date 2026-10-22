@@ -1,23 +1,47 @@
 # Licenses and provenance
 
-Reviewed 2026-10-21. The source application was created for this project; no blanket license for the owner's application code is asserted here. Third-party assets and dependencies retain their original licenses.
+Reviewed 2026-10-22. The source application was created for this project; no blanket license for the owner's application code is asserted here. Third-party assets and dependencies retain their original licenses.
 
 ## Bundled photographs
 
-These are individual free Unsplash photographs downloaded as 1200 × 1600 WebP derivatives. They are shipped from the app's own origin and included in the offline precache. This is a derivative meme application, not a stock-photo or wallpaper catalog. The [Unsplash License](https://unsplash.com/license) permits downloading, copying, modifying, distributing, and commercial use, with restrictions on unmodified sales and competing collections. This app does **not** use the Unsplash API; API hotlinking/download-tracking requirements should not be assumed interchangeable with manually licensed bundled assets.
+These 32 assets are individual free Unsplash photographs downloaded as 1200 × 1600 WebP derivatives. They are shipped from the app's own origin and included in the offline precache. This is a derivative meme application, not a stock-photo or wallpaper catalog. The [Unsplash License](https://unsplash.com/license) permits downloading, copying, modifying, distributing, and commercial use, with restrictions on unmodified sales and competing collections. This app does **not** use the Unsplash API; API hotlinking/download-tracking requirements should not be assumed interchangeable with manually licensed bundled assets.
 
-| Local file                  | Original image identifier / source                                                                                                                       | Creator recorded                 |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| `public/photos/forest.webp` | [photo-1441974231531-c6227db76b6e](https://images.unsplash.com/photo-1441974231531-c6227db76b6e) / [photo page](https://unsplash.com/photos/p0j-mE6mGo4) | Sebastian Unrau                  |
-| `public/photos/lake.webp`   | [photo-1470770841072-f978cf4d019e](https://images.unsplash.com/photo-1470770841072-f978cf4d019e) / [photo page](https://unsplash.com/photos/zAjdgNXsMeg) | Luca Bravo                       |
-| `public/photos/peaks.webp`  | [photo-1464822759023-fed622ff2c3b](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b)                                                         | Not recorded; source ID retained |
-| `public/photos/city.webp`   | [photo-1519501025264-65ba15a82390](https://images.unsplash.com/photo-1519501025264-65ba15a82390)                                                         | Not recorded; source ID retained |
-| `public/photos/dunes.webp`  | [photo-1509316785289-025f5b846b35](https://images.unsplash.com/photo-1509316785289-025f5b846b35)                                                         | Not recorded; source ID retained |
-| `public/photos/ocean.webp`  | [photo-1518837695005-2083093ee35b](https://images.unsplash.com/photo-1518837695005-2083093ee35b)                                                         | Not recorded; source ID retained |
-| `public/photos/coffee.webp` | [photo-1495474472287-4d71bcdd2085](https://images.unsplash.com/photo-1495474472287-4d71bcdd2085)                                                         | Not recorded; source ID retained |
-| `public/photos/stairs.webp` | [photo-1487958449943-2429e8be8625](https://images.unsplash.com/photo-1487958449943-2429e8be8625)                                                         | Not recorded; source ID retained |
+| Local file                        | Source                                                                                           | Creator recorded                 |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------- |
+| `public/photos/forest.webp`       | [photo-1441974231531-c6227db76b6e](https://unsplash.com/photos/p0j-mE6mGo4)                      | Sebastian Unrau                  |
+| `public/photos/lake.webp`         | [photo-1470770841072-f978cf4d019e](https://unsplash.com/photos/zAjdgNXsMeg)                      | Luca Bravo                       |
+| `public/photos/peaks.webp`        | [photo-1464822759023-fed622ff2c3b](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b) | Not recorded; source ID retained |
+| `public/photos/city.webp`         | [photo-1519501025264-65ba15a82390](https://images.unsplash.com/photo-1519501025264-65ba15a82390) | Not recorded; source ID retained |
+| `public/photos/dunes.webp`        | [photo-1509316785289-025f5b846b35](https://images.unsplash.com/photo-1509316785289-025f5b846b35) | Not recorded; source ID retained |
+| `public/photos/ocean.webp`        | [photo-1518837695005-2083093ee35b](https://images.unsplash.com/photo-1518837695005-2083093ee35b) | Not recorded; source ID retained |
+| `public/photos/coffee.webp`       | [photo-1495474472287-4d71bcdd2085](https://images.unsplash.com/photo-1495474472287-4d71bcdd2085) | Not recorded; source ID retained |
+| `public/photos/stairs.webp`       | [photo-1487958449943-2429e8be8625](https://images.unsplash.com/photo-1487958449943-2429e8be8625) | Not recorded; source ID retained |
+| `public/photos/mist.webp`         | [photo-1470071459604-3b5ec3a7fe05](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05) | Not recorded; source ID retained |
+| `public/photos/woodland.webp`     | [photo-1447752875215-b2761acb3c5d](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d) | Not recorded; source ID retained |
+| `public/photos/redwoods.webp`     | [photo-1511497584788-876760111969](https://images.unsplash.com/photo-1511497584788-876760111969) | Not recorded; source ID retained |
+| `public/photos/canopy.webp`       | [photo-1448375240586-882707db888b](https://images.unsplash.com/photo-1448375240586-882707db888b) | Not recorded; source ID retained |
+| `public/photos/sunlit-woods.webp` | [photo-1473448912268-2022ce9509d8](https://images.unsplash.com/photo-1473448912268-2022ce9509d8) | Not recorded; source ID retained |
+| `public/photos/canyon.webp`       | [photo-1500534314209-a25ddb2bd429](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429) | Not recorded; source ID retained |
+| `public/photos/valley.webp`       | [photo-1426604966848-d7adac402bff](https://images.unsplash.com/photo-1426604966848-d7adac402bff) | Not recorded; source ID retained |
+| `public/photos/ridge.webp`        | [photo-1469474968028-56623f02e42e](https://images.unsplash.com/photo-1469474968028-56623f02e42e) | Not recorded; source ID retained |
+| `public/photos/alpine-lake.webp`  | [photo-1501785888041-af3ef285b470](https://images.unsplash.com/photo-1501785888041-af3ef285b470) | Not recorded; source ID retained |
+| `public/photos/sunrise.webp`      | [photo-1470252649378-9c29740c9fa8](https://images.unsplash.com/photo-1470252649378-9c29740c9fa8) | Not recorded; source ID retained |
+| `public/photos/stars.webp`        | [photo-1511300636408-a63a89df3482](https://images.unsplash.com/photo-1511300636408-a63a89df3482) | Not recorded; source ID retained |
+| `public/photos/galaxy.webp`       | [photo-1534447677768-be436bb09401](https://images.unsplash.com/photo-1534447677768-be436bb09401) | Not recorded; source ID retained |
+| `public/photos/shore.webp`        | [photo-1473116763249-2faaef81ccda](https://images.unsplash.com/photo-1473116763249-2faaef81ccda) | Not recorded; source ID retained |
+| `public/photos/coast.webp`        | [photo-1507525428034-b723cf961d3e](https://images.unsplash.com/photo-1507525428034-b723cf961d3e) | Not recorded; source ID retained |
+| `public/photos/sea.webp`          | [photo-1498623116890-37e912163d5d](https://images.unsplash.com/photo-1498623116890-37e912163d5d) | Not recorded; source ID retained |
+| `public/photos/waterfall.webp`    | [photo-1432405972618-c60b0225b8f9](https://images.unsplash.com/photo-1432405972618-c60b0225b8f9) | Not recorded; source ID retained |
+| `public/photos/glass.webp`        | [photo-1480714378408-67cf0d13bc1b](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b) | Not recorded; source ID retained |
+| `public/photos/skyline.webp`      | [photo-1449824913935-59a10b8d2000](https://images.unsplash.com/photo-1449824913935-59a10b8d2000) | Not recorded; source ID retained |
+| `public/photos/street.webp`       | [photo-1519608487953-e999c86e7455](https://images.unsplash.com/photo-1519608487953-e999c86e7455) | Not recorded; source ID retained |
+| `public/photos/concrete.webp`     | [photo-1511818966892-d7d671e672a2](https://images.unsplash.com/photo-1511818966892-d7d671e672a2) | Not recorded; source ID retained |
+| `public/photos/facade.webp`       | [photo-1486406146926-c627a92ad1ab](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab) | Not recorded; source ID retained |
+| `public/photos/espresso.webp`     | [photo-1509042239860-f550ce710b93](https://images.unsplash.com/photo-1509042239860-f550ce710b93) | Not recorded; source ID retained |
+| `public/photos/cafe.webp`         | [photo-1442512595331-e89e73853f31](https://images.unsplash.com/photo-1442512595331-e89e73853f31) | Not recorded; source ID retained |
+| `public/photos/stillness.webp`    | [photo-1475924156734-496f6cac6ec1](https://images.unsplash.com/photo-1475924156734-496f6cac6ec1) | Not recorded; source ID retained |
 
-The photo info panel links source and license for every card. Creator names are optional when not verified; missing names are not fabricated. `src/data/photos.ts` records dimensions, categories, aesthetics, cache permissions, focal point, and provenance. `scripts/assets.mjs` is an optional acquisition script, not a build/runtime prerequisite.
+The photo info panel links source and license for every card. Creator names are optional when not verified; missing names are not fabricated. `src/data/photo-manifest.json` and `src/data/photos.ts` record dimensions, categories, aesthetics, cache permissions, focal point, and provenance. `scripts/assets.mjs` is an optional acquisition script, not a build/runtime prerequisite.
 
 ## Optional Pexels photos
 
@@ -29,14 +53,14 @@ The adapter uses returned Pexels CDN URLs directly; there is no arbitrary image 
 
 Fonts are bundled locally through Fontsource, with no runtime Google Fonts request. Every font below uses the SIL Open Font License 1.1; exact upstream copyright and reserved-name notices are preserved in `public/licenses/`.
 
-| Font                  | Use                        | License file                                                 |
-| --------------------- | -------------------------- | ------------------------------------------------------------ |
-| DM Sans, 400/600      | UI and wholesome captions  | [dm-sans.txt](public/licenses/dm-sans.txt)                   |
-| Lora, 600             | Motivational serif         | [lora.txt](public/licenses/lora.txt)                         |
-| Oswald, 600           | Sarcastic condensed sans   | [oswald.txt](public/licenses/oswald.txt)                     |
-| Nunito, 800           | Funny heavy sans           | [nunito.txt](public/licenses/nunito.txt)                     |
-| Space Grotesk, 700    | Absurd geometric sans      | [space-grotesk.txt](public/licenses/space-grotesk.txt)       |
-| Barlow Condensed, 500 | Dark restrained typography | [barlow-condensed.txt](public/licenses/barlow-condensed.txt) |
+| Font                    | Use                             | License file                                                 |
+| ----------------------- | ------------------------------- | ------------------------------------------------------------ |
+| DM Sans, 400/600/800    | UI and bold caption treatments  | [dm-sans.txt](public/licenses/dm-sans.txt)                   |
+| Lora, 600 normal/italic | Editorial / italic treatments   | [lora.txt](public/licenses/lora.txt)                         |
+| Oswald, 600             | Sarcastic condensed sans        | [oswald.txt](public/licenses/oswald.txt)                     |
+| Nunito, 800             | Funny heavy sans                | [nunito.txt](public/licenses/nunito.txt)                     |
+| Space Grotesk, 700      | Absurd geometric sans           | [space-grotesk.txt](public/licenses/space-grotesk.txt)       |
+| Barlow Condensed, 700   | Bold condensed poster treatment | [barlow-condensed.txt](public/licenses/barlow-condensed.txt) |
 
 ## Software and generated content
 

@@ -1,9 +1,14 @@
 import type { Caption, Card, Parameters, ReadyCard } from "../../shared/types";
 import { pickLocal } from "../data/captions";
 import { choosePhoto, photos } from "../data/photos";
-import { compose } from "./composition";
+import { compose, type Presentation } from "./composition";
 import { randomize } from "./parameters";
-import { readRecent, writeRecent } from "./storage";
+import {
+  readRecent,
+  writeRecent,
+  readPresentation,
+  writePresentation,
+} from "./storage";
 import { RemoteSupply } from "./supply";
 export function ready(card: Card): ReadyCard {
   return {
@@ -20,6 +25,7 @@ export class CardQueue {
   recent: string[] = [];
   photoHistory: string[] = [];
   shownPhotos: string[] = [];
+  shownLayouts: Presentation[] = [];
   paramHistory: Parameters[] = [];
   params: Parameters;
   revision = 0;
@@ -49,6 +55,9 @@ export class CardQueue {
   }
   async start() {
     this.recent = await readRecent();
+    const presentation = await readPresentation();
+    this.shownPhotos = presentation.photos;
+    this.shownLayouts = presentation.layouts;
     if (navigator.onLine) {
       let revision: number;
       do {
@@ -95,21 +104,34 @@ export class CardQueue {
         let photo = choosePhoto(
           caption.visualKeywords,
           params.aesthetic,
-          [...this.photoHistory.slice(-4), ...this.shownPhotos.slice(-1)],
+          [...this.shownPhotos, ...this.cards.slice(1).map((c) => c.photo.id)],
           [...photos, ...this.remote.photos],
+          caption.text,
         );
         let card: Card;
         try {
-          card = await compose(caption, photo, params);
-        } catch {
-          photo = choosePhoto(caption.visualKeywords, params.aesthetic, [
-            ...this.photoHistory.slice(-4),
-            ...this.shownPhotos.slice(-1),
+          card = await compose(caption, photo, params, [
+            ...this.shownLayouts,
+            ...this.cards.slice(1).map((c) => c.layout),
           ]);
-          card = await compose(caption, photo, params);
+        } catch {
+          photo = choosePhoto(
+            caption.visualKeywords,
+            params.aesthetic,
+            [
+              ...this.shownPhotos,
+              ...this.cards.slice(1).map((c) => c.photo.id),
+            ],
+            photos.filter((p) => p.id !== photo.id),
+            caption.text,
+          );
+          card = await compose(caption, photo, params, [
+            ...this.shownLayouts,
+            ...this.cards.slice(1).map((c) => c.layout),
+          ]);
         }
         if (this.stopped || revision !== this.revision) continue;
-        if (!this.cards.length) this.shownPhotos.push(photo.id);
+        if (!this.cards.length) this.rememberShown(card);
         this.cards.push(ready(card));
         this.recent.push(caption.id);
         this.recent = this.recent.slice(-200);
@@ -136,8 +158,7 @@ export class CardQueue {
       return false;
     }
     const previous = this.cards.shift()!;
-    this.shownPhotos.push(this.cards[0].photo.id);
-    this.shownPhotos = this.shownPhotos.slice(-8);
+    this.rememberShown(this.cards[0]);
     const release = () => {
       URL.revokeObjectURL(previous.url);
       this.retired = this.retired.filter((r) => r.url !== previous.url);
@@ -166,5 +187,10 @@ export class CardQueue {
       URL.revokeObjectURL(r.url);
     });
     this.retired = [];
+  }
+  private rememberShown(card: Card) {
+    this.shownPhotos = [...this.shownPhotos, card.photo.id].slice(-24);
+    this.shownLayouts = [...this.shownLayouts, card.layout].slice(-6);
+    void writePresentation(this.shownPhotos, this.shownLayouts);
   }
 }

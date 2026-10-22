@@ -8,6 +8,8 @@ import {
   wrapText,
   luminance,
   contrastScore,
+  chooseContrast,
+  selectTypeStyle,
 } from "../src/lib/composition";
 import {
   evictionIds,
@@ -43,9 +45,30 @@ describe("offline content and parameters", () => {
       ).id,
     ).toBe("forest");
   });
-  it("keeps a matching subject even when its photo is recent or another aesthetic is preferred", () => {
-    expect(choosePhoto(["ocean"], "Nature", ["ocean"]).id).toBe("ocean");
-    expect(choosePhoto(["ocean"], "Urban", ["ocean"]).id).toBe("ocean");
+  it("rotates literal subjects without depicting something unrelated", () => {
+    const selected = choosePhoto(
+      ["ocean"],
+      "Urban",
+      ["ocean"],
+      photos,
+      "I brought a clipboard to supervise the ocean.",
+    );
+    expect(selected.id).not.toBe("ocean");
+    expect(selected.categories).toContain("ocean");
+  });
+  it("does not repeat backgrounds in a twelve-card window even with identical visual keywords", () => {
+    const history: string[] = [];
+    for (let i = 0; i < 60; i++) {
+      const selected = choosePhoto(
+        ["coffee"],
+        "Minimal",
+        history,
+        photos,
+        "I asked about job security. They sent me a password reset.",
+      );
+      expect(history.slice(-12)).not.toContain(selected.id);
+      history.push(selected.id);
+    }
   });
   it("rejects corrupted settings", () => {
     expect(validParams({ ...DEFAULT_PARAMS, intensity: 99 })).toBe(false);
@@ -81,6 +104,38 @@ describe("composition fitting", () => {
     expect(luminance(0, 0, 0)).toBe(0);
     expect(luminance(255, 255, 255)).toBe(1);
     expect(contrastScore([0, 0])).toBeLessThan(contrastScore([0, 1]));
+  });
+  it("leaves dark photos unshaded, uses ink on pale photos and protects busy backgrounds", () => {
+    expect(
+      chooseContrast([
+        [30, 35, 40],
+        [50, 60, 70],
+      ]),
+    ).toMatchObject({ color: "#fffdf7", scrim: 0 });
+    expect(
+      chooseContrast([
+        [235, 230, 220],
+        [250, 250, 250],
+      ]),
+    ).toMatchObject({ color: "#171b1b", scrim: 0 });
+    const busy = chooseContrast([
+      [0, 0, 0],
+      [255, 255, 255],
+      [130, 130, 130],
+    ]);
+    expect(busy.contrast).toBeGreaterThanOrEqual(3.5);
+    expect(busy.scrim).toBeGreaterThan(0);
+  });
+  it("varies type within one mood without repeating either of the last two families", () => {
+    const history: { font: string; region: string; alignment: "left" }[] = [];
+    for (let i = 0; i < 20; i++) {
+      const selected = selectTypeStyle("dark", history);
+      expect(history.slice(-2).map((h) => h.font)).not.toContain(
+        selected.family,
+      );
+      history.push({ font: selected.family, region: "top", alignment: "left" });
+    }
+    expect(new Set(history.map((h) => h.font)).size).toBeGreaterThanOrEqual(3);
   });
 });
 describe("bounded local rejected history", () => {

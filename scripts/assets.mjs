@@ -1,25 +1,21 @@
-import { writeFile, mkdir, copyFile } from "node:fs/promises";
+import { writeFile, mkdir, copyFile, readFile } from "node:fs/promises";
 import sharp from "sharp";
 await mkdir("public/photos", { recursive: true });
-const photos = {
-  forest: "1441974231531-c6227db76b6e",
-  lake: "1470770841072-f978cf4d019e",
-  peaks: "1464822759023-fed622ff2c3b",
-  city: "1519501025264-65ba15a82390",
-  dunes: "1509316785289-025f5b846b35",
-  ocean: "1518837695005-2083093ee35b",
-  coffee: "1495474472287-4d71bcdd2085",
-  stairs: "1487958449943-2429e8be8625",
-};
+const photos = JSON.parse(
+  await readFile("src/data/photo-manifest.json", "utf8"),
+);
 await Promise.all(
-  Object.entries(photos).map(async ([name, id]) => {
+  photos.map(async ({ id, sourceId }) => {
     const r = await fetch(
-      `https://images.unsplash.com/photo-${id}?w=1200&h=1600&fit=crop&q=80&fm=webp`,
+      `https://images.unsplash.com/${sourceId}?w=1200&h=1600&fit=crop&q=80&fm=webp`,
     );
-    if (!r.ok) throw new Error(`${name}: ${r.status}`);
-    const b = Buffer.from(await r.arrayBuffer());
-    await writeFile(`public/photos/${name}.webp`, b);
-    console.log(name, b.length);
+    if (!r.ok) throw new Error(`${id}: ${r.status}`);
+    const b = await sharp(Buffer.from(await r.arrayBuffer()))
+      .resize(1200, 1600, { fit: "cover" })
+      .webp({ quality: 64, effort: 5 })
+      .toBuffer();
+    await writeFile(`public/photos/${id}.webp`, b);
+    console.log(id, b.length);
   }),
 );
 const svg =

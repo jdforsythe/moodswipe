@@ -4,7 +4,7 @@ Only the operator configures services. Do not add credential fields, sign-in req
 
 ## Current deployment
 
-Verified 2026-10-21 at **https://moodswipe.jdforsythe.workers.dev/**. `AI_ENABLED=true` and `DAILY_AI_CALLS=500` are deployed and preserved across normal redeploys. Live Workers AI generation, composition, PNG download, and offline Rejected persistence passed. No additional AI API credential is required. Pexels is disabled; an existing `PEXELS_API_KEY` is needed only for external photo search. The bundled photographs work now. Production version at verification: `30e7bb6d-9327-44e0-a52a-b7adad2758b0`.
+Verified 2026-10-22 at **https://moodswipe.jdforsythe.workers.dev/**. `AI_ENABLED=true` and `DAILY_AI_CALLS=500` are deployed and preserved across normal redeploys. Live Workers AI generation, composition, PNG download, and offline Rejected persistence passed. No additional AI API credential is required. Pexels is disabled; an existing `PEXELS_API_KEY` is needed only for external photo search. The bundled photographs work now. Production version at verification: `87c25286-c5b1-495a-b195-388348b257a6`.
 
 To update from this Mac, run `npm run deploy`; the existing Cloudflare login is sufficient until it expires. `npx wrangler login` renews it if necessary. Source is published to `https://github.com/jdforsythe/moodswipe` on `master`. Automatic deployment is not configured; connect Workers Builds to that branch or configure the manual workflow secrets described in the README.
 
@@ -12,15 +12,15 @@ To update from this Mac, run `npm run deploy`; the existing Cloudflare login is 
 
 Set values in Cloudflare → Workers & Pages → moodswipe → Settings → Variables and Secrets. Save/deploy changes, then reload the application. `wrangler.jsonc` preserves dashboard variables (`keep_vars: true`). Local development reads optional `.dev.vars` (ignored by Git); `.env.example` lists placeholder names only. Never use `VITE_` for credentials.
 
-| Name                | Type       | Default when absent                        | Purpose                                                                                  |
-| ------------------- | ---------- | ------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| `AI_ENABLED`        | Variable   | `false`                                    | Set exactly `true` to permit inference                                                   |
-| `AI_MODEL`          | Variable   | `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | Verified Workers AI JSON-capable model                                                   |
-| `DAILY_AI_CALLS`    | Variable   | `500`                                       | Global daily inference attempts, including retries; `0` disables calls; hard maximum 10000 |
-| `PHOTOS_ENABLED`    | Variable   | `false`                                    | Set exactly `true` to request Pexels metadata                                            |
-| `PEXELS_API_KEY`    | **Secret** | None                                       | Optional Pexels account API key                                                          |
-| `DAILY_PHOTO_CALLS` | Variable   | `120`                                      | Uncached Pexels searches/day; hard maximum 300                                           |
-| `ALLOWED_ORIGINS`   | Variable   | Empty                                      | Optional exact comma-separated additional origins; same origin is automatic              |
+| Name                | Type       | Default when absent                        | Purpose                                                                                    |
+| ------------------- | ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `AI_ENABLED`        | Variable   | `false`                                    | Set exactly `true` to permit inference                                                     |
+| `AI_MODEL`          | Variable   | `@cf/meta/llama-3.3-70b-instruct-fp8-fast` | Verified Workers AI JSON-capable model                                                     |
+| `DAILY_AI_CALLS`    | Variable   | `500`                                      | Global daily inference attempts, including retries; `0` disables calls; hard maximum 10000 |
+| `PHOTOS_ENABLED`    | Variable   | `false`                                    | Set exactly `true` to request Pexels metadata                                              |
+| `PEXELS_API_KEY`    | **Secret** | None                                       | Optional Pexels account API key                                                            |
+| `DAILY_PHOTO_CALLS` | Variable   | `120`                                      | Uncached Pexels searches/day; hard maximum 300                                             |
+| `ALLOWED_ORIGINS`   | Variable   | Empty                                      | Optional exact comma-separated additional origins; same origin is automatic                |
 
 AI uses the `AI` Worker binding. There is **no AI API token in the frontend or operator browser**. Cloudflare deploy authentication is separate: `wrangler login` for your Mac, or `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in GitHub secrets if using the manual deployment workflow. Never commit those credentials.
 
@@ -42,7 +42,7 @@ Paste the key into the interactive prompt. Do not pass it on a command line, put
 4. Optionally enable Pexels and verify the visible Pexels/photographer credit, actual export, and broken-image fallback.
 5. Test installed Android/iOS behavior using [TESTING.md](TESTING.md). No automated test can certify a device’s Photos app or third-party share destination.
 
-`node scripts/verify-live-ai.mjs` manually tests the deployed AI path, byte-identical PNG export, and offline Rejected persistence. It makes a real generation request and can consume shared quota; it is intentionally excluded from CI. Wait at least 15 seconds between attempts; provider requests typically take longer than that. A depleted quota, open circuit, or lack of fresh candidates makes this strict live check fail even though the application continues serving local content.
+`node scripts/verify-live-ai.mjs https://moodswipe.jdforsythe.workers.dev --dark` manually tests the deployed AI path, byte-identical PNG export, and offline Rejected persistence. It makes a real generation request and can consume shared quota; it is intentionally excluded from CI. Wait at least 15 seconds between attempts; provider requests typically take longer than that. A depleted quota, open circuit, or lack of fresh candidates makes this strict live check fail even though the application continues serving local content.
 
 ## Budget and recovery
 
@@ -67,3 +67,11 @@ Shared pool metadata is available only through the Cloudflare operator tools; th
 ## Request recovery
 
 Health configuration is rechecked after 30 seconds when supply is needed. Short pacing waits use the server’s actual retry interval rather than a blanket 15-minute delay. One-shot retries run only while online, visible, and within two minutes of browsing activity. Returning to the tab or using **Try fresh captions** resumes demand. Random Mode consumes valid captions across moods/topics and composes with their actual metadata. Already-seen IDs are removed locally so they cannot make an unusable remote pool look full.
+
+## Caption and composition rollout — 2026-10-22
+
+Version `87c25286-c5b1-495a-b195-388348b257a6` expands the bundled pack from 8 to 32 photographs, adds persistent photo/type rotation, and uses image-aware text color and optional gradients. The caption brief and phrase filters are updated, eight candidates are requested per call, and pre-update generic pool items are invalidated while retaining the 500-attempt daily ledger. Llama 3.3 remains the production model; Qwen 3 and GPT-OSS trials were faster but did not produce consistently better writing. No additional credentials are required.
+
+The actual deployed Dark Humor check returned five accepted captions in 19.7 seconds. Spinner-before-first-card, AI provenance, byte-identical 1080 × 1440 PNG export, Share retaining the card, and offline restoration in Rejected passed with no uncaught browser errors. Results and the complete accepted batch are recorded in `artifacts/live-ai-result.json`; the live screenshot is `artifacts/live-ai-android-chromium.png`. Some accepted lines were still plain observations: automated acceptance does not mean editorial approval. The fallback Dark Humor collection was rewritten independently.
+
+Existing installations should reload and accept **A new version is ready. Update** to install the new photo/font pack. Rejected images keep their original rendered bytes. Code rollback is available in Cloudflare Deployments; it does not restore discarded obsolete pool captions or reset usage limits.

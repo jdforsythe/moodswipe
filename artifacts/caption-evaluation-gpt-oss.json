@@ -1,0 +1,343 @@
+{
+  "model": "@cf/openai/gpt-oss-120b",
+  "elapsedMs": 11303,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4
+  },
+  "results": [
+    {
+      "raw": {
+        "caption": "They said \"bring your authentic self\" to the mixer. I showed up wearing my résumé and a fake smile—HR called it \"team spirit.\"",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "dry irony",
+        "visualKeywords": [
+          "city",
+          "architecture",
+          "night"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "networking",
+          "performance",
+          "authenticity",
+          "HR"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-7b2c348e",
+          "text": "They said \"bring your authentic self\" to the mixer. I showed up wearing my résumé and a fake smile—HR called it \"team spirit.\"",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "dry irony",
+          "visualKeywords": [
+            "city",
+            "architecture",
+            "night"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425386,
+          "conceptTags": [
+            "networking",
+            "performance",
+            "authenticity"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "A birthday notification pops up for my ex‑friend. I RSVP’d: \"I'll be there in spirit—if my therapist clears me for grief. \"",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "self‑deprecating confession",
+        "visualKeywords": [
+          "coffee",
+          "indoor",
+          "window"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "birthday",
+          "social media",
+          "remnants",
+          "therapy"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-1bc41eaa",
+          "text": "A birthday notification pops up for my ex‑friend. I RSVP’d: \"I'll be there in spirit—if my therapist clears me for grief. \"",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "self‑deprecating confession",
+          "visualKeywords": [
+            "coffee",
+            "indoor",
+            "window"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425388,
+          "conceptTags": [
+            "birthday",
+            "social media",
+            "remnants"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "\"Bereavement leave: up to five days, subject to manager approval.\" The only thing dying faster than my morale is the memory of my aunt’s casserole.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "literal reading with twist",
+        "visualKeywords": [
+          "office",
+          "desk",
+          "cold"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "HR policy",
+          "death",
+          "bureaucracy",
+          "casserole"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-758012f7",
+          "text": "\"Bereavement leave: up to five days, subject to manager approval.\" The only thing dying faster than my morale is the memory of my aunt’s casserole.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "literal reading with twist",
+          "visualKeywords": [
+            "office",
+            "desk",
+            "cold"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425388,
+          "conceptTags": [
+            "HR policy",
+            "death",
+            "bureaucracy"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "The antique table needed a new leg; the quote said $2,400. I realized I could've bought a brand‑new table and kept the old one for Instagram nostalgia.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "understatement",
+        "visualKeywords": [
+          "architecture",
+          "interior",
+          "sunlight"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "repair",
+          "consumerism",
+          "nostalgia",
+          "budget"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-26ecd68c",
+          "text": "The antique table needed a new leg; the quote said $2,400. I realized I could've bought a brand‑new table and kept the old one for Instagram nostalgia.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "understatement",
+          "visualKeywords": [
+            "architecture",
+            "interior",
+            "sunlight"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425388,
+          "conceptTags": [
+            "repair",
+            "consumerism",
+            "nostalgia"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "\"Having fun?\" the host asked, as I stared at the empty snack bowl. I replied, \"I’m auditioning for the role of 'glad you’re here.'\"",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "dialogue",
+        "visualKeywords": [
+          "party",
+          "living room",
+          "low‑light"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "social pressure",
+          "party",
+          "performance",
+          "snacks"
+        ]
+      },
+      "validation": {
+        "reason": "low_quality"
+      }
+    },
+    {
+      "raw": {
+        "caption": "Grandma passed the potatoes and asked, \"When are you settling down?\" I said, \"When I stop hearing about the one‑inch cut in my knee.\"",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "sharp reversal",
+        "visualKeywords": [
+          "dining room",
+          "wood",
+          "warm"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "family",
+          "age",
+          "health",
+          "expectations"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-9ca73556",
+          "text": "Grandma passed the potatoes and asked, \"When are you settling down?\" I said, \"When I stop hearing about the one‑inch cut in my knee.\"",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "sharp reversal",
+          "visualKeywords": [
+            "dining room",
+            "wood",
+            "warm"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425388,
+          "conceptTags": [
+            "family",
+            "age",
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "The email read, \"Your presence is required at the quarterly review.\" I printed it, folded it into a paper airplane, and mailed it to the boss.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "literal turn",
+        "visualKeywords": [
+          "office",
+          "window",
+          "rain"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "invitation",
+          "summons",
+          "rebellion",
+          "work"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-ca715d99",
+          "text": "The email read, \"Your presence is required at the quarterly review.\" I printed it, folded it into a paper airplane, and mailed it to the boss.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "literal turn",
+          "visualKeywords": [
+            "office",
+            "window",
+            "rain"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425388,
+          "conceptTags": [
+            "invitation",
+            "summons",
+            "rebellion"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Mortgage says 28 years left, my knee says 5. I’m budgeting for a retirement plan that includes a wheelchair and a lower‑interest loan.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "confession with grim punchline",
+        "visualKeywords": [
+          "city",
+          "skyline",
+          "dusk"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "mortgage",
+          "aging",
+          "financial planning",
+          "health"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-a19c69af",
+          "text": "Mortgage says 28 years left, my knee says 5. I’m budgeting for a retirement plan that includes a wheelchair and a lower‑interest loan.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "confession with grim punchline",
+          "visualKeywords": [
+            "city",
+            "skyline",
+            "dusk"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676425389,
+          "conceptTags": [
+            "mortgage",
+            "aging",
+            "financial planning"
+          ]
+        }
+      }
+    }
+  ]
+}

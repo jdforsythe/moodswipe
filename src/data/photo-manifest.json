@@ -1,0 +1,263 @@
+[
+  {
+    "id": "forest",
+    "sourceId": "photo-1441974231531-c6227db76b6e",
+    "creator": "Sebastian Unrau",
+    "page": "p0j-mE6mGo4",
+    "categories": ["forest", "trees", "quiet", "growth", "nature"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "lake",
+    "sourceId": "photo-1470770841072-f978cf4d019e",
+    "creator": "Luca Bravo",
+    "page": "zAjdgNXsMeg",
+    "categories": ["lake", "mountain", "reflection", "quiet", "nature"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "peaks",
+    "sourceId": "photo-1464822759023-fed622ff2c3b",
+    "creator": "",
+    "page": "",
+    "categories": ["mountain", "sky", "climb", "space"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "city",
+    "sourceId": "photo-1519501025264-65ba15a82390",
+    "creator": "",
+    "page": "",
+    "categories": ["city", "work", "night", "technology", "social"],
+    "aesthetics": ["Urban", "Cinematic"]
+  },
+  {
+    "id": "dunes",
+    "sourceId": "photo-1509316785289-025f5b846b35",
+    "creator": "",
+    "page": "",
+    "categories": ["desert", "sand", "empty", "time"],
+    "aesthetics": ["Minimal", "Abstract", "Surreal-looking photography"]
+  },
+  {
+    "id": "ocean",
+    "sourceId": "photo-1518837695005-2083093ee35b",
+    "creator": "",
+    "page": "",
+    "categories": ["ocean", "water", "wave", "blue", "freedom"],
+    "aesthetics": ["Nature", "Abstract"]
+  },
+  {
+    "id": "coffee",
+    "sourceId": "photo-1495474472287-4d71bcdd2085",
+    "creator": "",
+    "page": "",
+    "categories": ["coffee", "work", "morning", "home", "everyday"],
+    "aesthetics": ["Minimal", "Cinematic"]
+  },
+  {
+    "id": "stairs",
+    "sourceId": "photo-1487958449943-2429e8be8625",
+    "creator": "",
+    "page": "",
+    "categories": ["building", "architecture", "lines", "city", "work"],
+    "aesthetics": [
+      "Urban",
+      "Abstract",
+      "Minimal",
+      "Surreal-looking photography"
+    ]
+  },
+  {
+    "id": "mist",
+    "sourceId": "photo-1470071459604-3b5ec3a7fe05",
+    "creator": "",
+    "page": "",
+    "categories": ["landscape", "mountain", "forest", "quiet", "nature"],
+    "aesthetics": ["Nature", "Cinematic", "Minimal"]
+  },
+  {
+    "id": "woodland",
+    "sourceId": "photo-1447752875215-b2761acb3c5d",
+    "creator": "",
+    "page": "",
+    "categories": ["forest", "trees", "nature", "quiet"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "redwoods",
+    "sourceId": "photo-1511497584788-876760111969",
+    "creator": "",
+    "page": "",
+    "categories": ["forest", "trees", "nature", "growth"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "canopy",
+    "sourceId": "photo-1448375240586-882707db888b",
+    "creator": "",
+    "page": "",
+    "categories": ["forest", "trees", "nature", "quiet"],
+    "aesthetics": ["Nature", "Abstract"]
+  },
+  {
+    "id": "sunlit-woods",
+    "sourceId": "photo-1473448912268-2022ce9509d8",
+    "creator": "",
+    "page": "",
+    "categories": ["forest", "trees", "nature", "light"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "canyon",
+    "sourceId": "photo-1500534314209-a25ddb2bd429",
+    "creator": "",
+    "page": "",
+    "categories": ["mountain", "landscape", "space", "nature", "quiet"],
+    "aesthetics": ["Nature", "Minimal", "Surreal-looking photography"]
+  },
+  {
+    "id": "valley",
+    "sourceId": "photo-1426604966848-d7adac402bff",
+    "creator": "",
+    "page": "",
+    "categories": ["mountain", "water", "lake", "landscape", "nature"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "ridge",
+    "sourceId": "photo-1469474968028-56623f02e42e",
+    "creator": "",
+    "page": "",
+    "categories": ["mountain", "sky", "landscape", "space"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "alpine-lake",
+    "sourceId": "photo-1501785888041-af3ef285b470",
+    "creator": "",
+    "page": "",
+    "categories": ["lake", "water", "mountain", "nature"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "sunrise",
+    "sourceId": "photo-1470252649378-9c29740c9fa8",
+    "creator": "",
+    "page": "",
+    "categories": ["sky", "landscape", "nature", "quiet"],
+    "aesthetics": ["Nature", "Minimal"]
+  },
+  {
+    "id": "stars",
+    "sourceId": "photo-1511300636408-a63a89df3482",
+    "creator": "",
+    "page": "",
+    "categories": ["mountain", "lake", "water", "sky", "quiet"],
+    "aesthetics": ["Cinematic", "Minimal", "Surreal-looking photography"]
+  },
+  {
+    "id": "galaxy",
+    "sourceId": "photo-1534447677768-be436bb09401",
+    "creator": "",
+    "page": "",
+    "categories": ["sky", "space", "night"],
+    "aesthetics": ["Abstract", "Cinematic", "Surreal-looking photography"]
+  },
+  {
+    "id": "shore",
+    "sourceId": "photo-1473116763249-2faaef81ccda",
+    "creator": "",
+    "page": "",
+    "categories": ["ocean", "water", "shore", "quiet"],
+    "aesthetics": ["Nature", "Minimal"]
+  },
+  {
+    "id": "coast",
+    "sourceId": "photo-1507525428034-b723cf961d3e",
+    "creator": "",
+    "page": "",
+    "categories": ["ocean", "water", "sand", "sky"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "sea",
+    "sourceId": "photo-1498623116890-37e912163d5d",
+    "creator": "",
+    "page": "",
+    "categories": ["ocean", "water", "sky", "boat"],
+    "aesthetics": ["Nature", "Abstract"]
+  },
+  {
+    "id": "waterfall",
+    "sourceId": "photo-1432405972618-c60b0225b8f9",
+    "creator": "",
+    "page": "",
+    "categories": ["water", "forest", "nature", "landscape"],
+    "aesthetics": ["Nature", "Cinematic"]
+  },
+  {
+    "id": "glass",
+    "sourceId": "photo-1480714378408-67cf0d13bc1b",
+    "creator": "",
+    "page": "",
+    "categories": ["city", "building", "architecture", "work"],
+    "aesthetics": ["Urban", "Abstract"]
+  },
+  {
+    "id": "skyline",
+    "sourceId": "photo-1449824913935-59a10b8d2000",
+    "creator": "",
+    "page": "",
+    "categories": ["city", "building", "architecture", "sky"],
+    "aesthetics": ["Urban", "Cinematic"]
+  },
+  {
+    "id": "street",
+    "sourceId": "photo-1519608487953-e999c86e7455",
+    "creator": "",
+    "page": "",
+    "categories": ["city", "architecture", "night", "work"],
+    "aesthetics": ["Urban", "Cinematic"]
+  },
+  {
+    "id": "concrete",
+    "sourceId": "photo-1511818966892-d7d671e672a2",
+    "creator": "",
+    "page": "",
+    "categories": ["building", "architecture", "lines", "work"],
+    "aesthetics": ["Urban", "Abstract", "Minimal"]
+  },
+  {
+    "id": "facade",
+    "sourceId": "photo-1486406146926-c627a92ad1ab",
+    "creator": "",
+    "page": "",
+    "categories": ["building", "architecture", "work", "sky"],
+    "aesthetics": ["Urban", "Abstract"]
+  },
+  {
+    "id": "espresso",
+    "sourceId": "photo-1509042239860-f550ce710b93",
+    "creator": "",
+    "page": "",
+    "categories": ["coffee", "morning", "work", "everyday"],
+    "aesthetics": ["Minimal", "Cinematic"]
+  },
+  {
+    "id": "cafe",
+    "sourceId": "photo-1442512595331-e89e73853f31",
+    "creator": "",
+    "page": "",
+    "categories": ["coffee", "morning", "work", "everyday"],
+    "aesthetics": ["Minimal", "Cinematic"]
+  },
+  {
+    "id": "stillness",
+    "sourceId": "photo-1475924156734-496f6cac6ec1",
+    "creator": "",
+    "page": "",
+    "categories": ["ocean", "water", "sky", "quiet"],
+    "aesthetics": ["Nature", "Minimal"]
+  }
+]

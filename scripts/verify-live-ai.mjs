@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { mkdir } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import { chromium, devices, expect } from "@playwright/test";
 
 // This deliberately uses the live provider and can consume the shared AI quota.
@@ -17,12 +17,27 @@ const browser = await chromium.launch();
 try {
   const context = await browser.newContext({ ...devices["Pixel 7"] });
   const page = await context.newPage();
+  if (process.argv.includes("--dark")) {
+    await page.addInitScript(() =>
+      localStorage.setItem(
+        "moodswipe:params",
+        JSON.stringify({
+          mood: "dark",
+          topic: "Surprise Me",
+          intensity: 4,
+          aesthetic: "Cinematic",
+          random: false,
+        }),
+      ),
+    );
+  }
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   const generation = page.waitForResponse(
     (r) => new URL(r.url()).pathname === "/api/generate",
     { timeout: 60000 },
   );
+  const started = Date.now();
   await page.goto(base);
   const viewer = page.getByTestId("viewer");
   await expect(page.getByTestId("first-card-loading")).toBeVisible();
@@ -31,6 +46,7 @@ try {
   const response = await generation;
   assert.equal(response.status(), 200, "The generation endpoint must succeed.");
   const batch = await response.json();
+  const responseMs = Date.now() - started;
   assert.ok(
     batch.captions?.some((c) => c.source === "llm"),
     "No fresh captions returned: check provider availability, quota, cooldown and filters.",
@@ -93,24 +109,25 @@ try {
   await expect(viewer).toHaveAttribute("data-card-id", generated);
   await expect(viewer).toHaveAttribute("data-source", "llm");
   assert.deepEqual(errors, []);
-  console.log(
-    JSON.stringify(
-      {
-        url: base,
-        health,
-        acceptedCaptions: batch.captions.length,
-        firstCardIsAI: true,
-        liveAICaption: caption,
-        image: `${preview.width}x${preview.height}`,
-        identicalPNGExport: true,
-        shareRetainsCard: true,
-        generatedCardSurvivesOfflineReloadInRejected: true,
-        screenshot: "artifacts/live-ai-android-chromium.png",
-      },
-      null,
-      2,
-    ),
+  const result = {
+    url: base,
+    health,
+    acceptedCaptions: batch.captions.length,
+    responseMs,
+    captions: batch.captions.map((c) => c.text),
+    firstCardIsAI: true,
+    liveAICaption: caption,
+    image: `${preview.width}x${preview.height}`,
+    identicalPNGExport: true,
+    shareRetainsCard: true,
+    generatedCardSurvivesOfflineReloadInRejected: true,
+    screenshot: "artifacts/live-ai-android-chromium.png",
+  };
+  await writeFile(
+    "artifacts/live-ai-result.json",
+    JSON.stringify(result, null, 2) + "\n",
   );
+  console.log(JSON.stringify(result, null, 2));
 } finally {
   await browser.close();
 }

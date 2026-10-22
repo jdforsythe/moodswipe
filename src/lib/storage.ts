@@ -1,4 +1,5 @@
 import { openDB, type DBSchema } from "idb";
+import type { Presentation } from "./composition";
 import {
   DEFAULT_PARAMS,
   validParams,
@@ -137,5 +138,61 @@ export async function writeRecent(ids: string[]) {
     await (await db()).put("meta", ids.slice(-200), "recent");
   } catch {
     /* Recent-history persistence is optional; in-memory dedupe still applies. */
+  }
+}
+export async function readPresentation(): Promise<{
+  photos: string[];
+  layouts: Presentation[];
+}> {
+  try {
+    let immediate: unknown;
+    try {
+      immediate = JSON.parse(
+        localStorage.getItem("moodswipe:presentation") ?? "null",
+      );
+    } catch {
+      /* IndexedDB fallback. */
+    }
+    const value = (immediate ??
+      (await (await db()).get("meta", "presentation"))) as
+      { photos?: unknown[]; layouts?: Presentation[] } | undefined;
+    return {
+      photos: (Array.isArray(value?.photos) ? value.photos : [])
+        .filter((id): id is string => typeof id === "string")
+        .slice(-24),
+      layouts: (Array.isArray(value?.layouts) ? value.layouts : [])
+        .filter(
+          (l) =>
+            l && typeof l.font === "string" && typeof l.region === "string",
+        )
+        .slice(-6),
+    };
+  } catch {
+    return { photos: [], layouts: [] };
+  }
+}
+export async function writePresentation(
+  photos: string[],
+  layouts: Presentation[],
+) {
+  const value = {
+    photos: photos.slice(-24),
+    layouts: layouts.slice(-6).map(({ font, style, region, alignment }) => ({
+      font,
+      style,
+      region,
+      alignment,
+    })),
+  };
+  // Commit the tiny history before publishing: reload must not race IndexedDB.
+  try {
+    localStorage.setItem("moodswipe:presentation", JSON.stringify(value));
+  } catch {
+    /* Optional fast persistence. */
+  }
+  try {
+    await (await db()).put("meta", value, "presentation");
+  } catch {
+    /* Variety persists in memory if storage is unavailable. */
   }
 }

@@ -9,6 +9,8 @@ import {
 vi.mock("../src/lib/storage", () => ({
   readRecent: async () => [],
   writeRecent: async () => {},
+  readPresentation: async () => ({ photos: [], layouts: [] }),
+  writePresentation: async () => {},
 }));
 vi.mock("../src/lib/supply", () => ({
   RemoteSupply: class {

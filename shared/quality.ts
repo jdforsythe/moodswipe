@@ -44,6 +44,34 @@ export function similarity(a: string, b: string) {
   const common = [...aa].filter((x) => bb.has(x)).length;
   return common / Math.max(1, aa.size + bb.size - common);
 }
+// A narrow editorial floor, not a claim that a regex can judge humor. These
+// reject scenery labels / stock despair metaphors observed in live batches.
+export function isEmptyCaption(text: string) {
+  const normalized = normalize(text);
+  const words = normalized.split(" ");
+  if (words.length < 5) return true;
+  if (
+    /\b(back goes out more|other shoe to drop|retirement plan is to die young|charged for existing)\b/.test(
+      normalized,
+    )
+  )
+    return true;
+  if (
+    /\b(hint of existential dread|ocean of uncertainty|sandcastles? of self doubt|forest of forgotten|tree of knowledge roots of ignorance)\b/.test(
+      normalized,
+    )
+  )
+    return true;
+  const scenery =
+    /^(?:abandoned |desert )?(?:architecture|landscapes?|coffee|desert|lake|forest|sky|skydiving|building bridges|sandcastles?|ocean|trees?|mountains?|sunsets?|horizon|abyss|void)\b/.test(
+      normalized,
+    );
+  const turn =
+    /\b(i|im|ive|my|me|we|our|you|your|is|are|was|were|has|have|does|did|but|yet|until|except|apparently|turns out)\b/.test(
+      normalized,
+    );
+  return scenery && !turn;
+}
 export function validateCandidate(value: unknown): {
   caption?: Caption;
   reason?: RejectionReason;
@@ -67,6 +95,7 @@ export function validateCandidate(value: unknown): {
     return { reason: "too_long" };
   if (
     text.length < 12 ||
+    isEmptyCaption(text) ||
     /\b(live laugh love|keep calm and|good vibes only|just be yourself|everything happens for a reason|follow your dreams|believe in yourself)\b/i.test(
       text,
     )

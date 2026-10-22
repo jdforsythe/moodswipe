@@ -1,0 +1,26 @@
+{
+  "url": "https://moodswipe.jdforsythe.workers.dev",
+  "health": {
+    "ok": true,
+    "ai": "configured",
+    "photos": "disabled",
+    "fallback": "bundled",
+    "version": 1
+  },
+  "acceptedCaptions": 5,
+  "responseMs": 19669,
+  "captions": [
+    "Our team-building retreat is at a funeral home.",
+    "Taxes are due on the anniversary of my layoff.",
+    "This insurance policy has a 30-page waiver.",
+    "We're updating our wills at the dinner table.",
+    "Their 'work-life balance' seminar is on a Saturday."
+  ],
+  "firstCardIsAI": true,
+  "liveAICaption": "Our team-building retreat is at a funeral home.",
+  "image": "1080x1440",
+  "identicalPNGExport": true,
+  "shareRetainsCard": true,
+  "generatedCardSurvivesOfflineReloadInRejected": true,
+  "screenshot": "artifacts/live-ai-android-chromium.png"
+}

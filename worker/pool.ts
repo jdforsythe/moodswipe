@@ -7,7 +7,11 @@ import {
   type PoolItem,
   type RejectionReason,
 } from "../shared/quality";
-import { DEFAULT_MODEL, WorkersAIProvider } from "./providers";
+import {
+  DEFAULT_MODEL,
+  EDITORIAL_VERSION,
+  WorkersAIProvider,
+} from "./providers";
 import {
   GENERATION_TIMEOUT_MS,
   GENERATION_INTERVAL_MS,
@@ -49,6 +53,7 @@ type State = {
   openUntil: number;
   lastGeneration: number;
   providerConfig?: string;
+  editorialVersion?: number;
 };
 const empty = (providerConfig: string): State => ({
   day: new Date().toISOString().slice(0, 10),
@@ -63,6 +68,7 @@ const empty = (providerConfig: string): State => ({
   openUntil: 0,
   lastGeneration: 0,
   providerConfig,
+  editorialVersion: EDITORIAL_VERSION,
 });
 export class CandidatePool {
   state!: State;
@@ -138,6 +144,13 @@ export class CandidatePool {
     if (!validParams(body.params))
       return Response.json({ error: "invalid_parameters" }, { status: 400 });
     const params = body.params;
+    if (this.state.editorialVersion !== EDITORIAL_VERSION) {
+      // Old generic batches must not leak back through salvage/remix after an
+      // editorial update. Preserve quota, pacing, and abuse counters.
+      this.state.pool = [];
+      this.state.recent = [];
+      this.state.editorialVersion = EDITORIAL_VERSION;
+    }
     // An operator's model/configuration fix may recover an open circuit. Keep
     // the durable spending ledger and generation pacing intact across changes.
     const providerConfig = `${this.env.AI_MODEL || DEFAULT_MODEL}:${GENERATION_TIMEOUT_MS}`;

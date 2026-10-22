@@ -39,6 +39,31 @@ describe("untrusted candidate validation", () => {
       "low_quality",
     );
   });
+  it("rejects the scenery fragments reported from the live dark-humor feed", () => {
+    for (const caption of [
+      "Abandoned architecture, nature's revenge",
+      "Coffee with a hint of existential dread",
+      "Desert landscapes, inner emptiness",
+      "Lake of broken mirrors",
+      "Forest of forgotten books",
+      "Skydiving into the weekend",
+      "Building bridges to nowhere",
+      "Sandcastles of self-doubt",
+      "Ocean of uncertainty",
+      "Tree of knowledge, roots of ignorance",
+      "Tree in the void",
+    ])
+      expect(validateCandidate({ ...raw, mood: "dark", caption }).reason).toBe(
+        "low_quality",
+      );
+    expect(
+      validateCandidate({
+        ...raw,
+        mood: "dark",
+        caption: "I asked about job security. They sent me a password reset.",
+      }).caption,
+    ).toBeDefined();
+  });
   it("normalizes fingerprints and measures near duplicates", () => {
     expect(fingerprint("Hello, world!")).toBe(fingerprint("hello world"));
     expect(similarity(raw.caption, raw.caption)).toBe(1);

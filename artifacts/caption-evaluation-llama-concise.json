@@ -1,0 +1,342 @@
+{
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "elapsedMs": 20989,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4,
+    "aesthetic": "Cinematic",
+    "random": false
+  },
+  "promptVariant": "concise-editorial",
+  "results": [
+    {
+      "raw": {
+        "caption": "Funeral expenses are now a budget line item.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "gallows humor",
+        "visualKeywords": [
+          "ocean",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "lower",
+        "conceptTags": [
+          "mortality",
+          "financial precarity"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-1213a0ac",
+          "text": "Funeral expenses are now a budget line item.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "gallows humor",
+          "visualKeywords": [
+            "ocean",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "lower",
+          "source": "llm",
+          "createdAt": 1792691205094,
+          "conceptTags": [
+            "mortality",
+            "financial precarity"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Their 'family-owned' business means they can fire you at dinner.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "reversal",
+        "visualKeywords": [
+          "building",
+          "city"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "corporate disposability",
+          "family obligations"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-f0f3b566",
+          "text": "Their 'family-owned' business means they can fire you at dinner.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "reversal",
+          "visualKeywords": [
+            "building",
+            "city"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691205094,
+          "conceptTags": [
+            "corporate disposability",
+            "family obligations"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Aging means learning what not to Google after 10 PM.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "wordplay",
+        "visualKeywords": [
+          "coffee",
+          "trees"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "middle",
+        "conceptTags": [
+          "aging",
+          "denial"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-731a7592",
+          "text": "Aging means learning what not to Google after 10 PM.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "wordplay",
+          "visualKeywords": [
+            "coffee",
+            "trees"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "middle",
+          "source": "llm",
+          "createdAt": 1792691205094,
+          "conceptTags": [
+            "aging",
+            "denial"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Now my browser suggests 'mortgage calculator' and 'last will template'.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "satire",
+        "visualKeywords": [
+          "architecture",
+          "water"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "lower",
+        "conceptTags": [
+          "mortality",
+          "financial precarity"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-b86a5a8d",
+          "text": "Now my browser suggests 'mortgage calculator' and 'last will template'.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "satire",
+          "visualKeywords": [
+            "architecture",
+            "water"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "lower",
+          "source": "llm",
+          "createdAt": 1792691205094,
+          "conceptTags": [
+            "mortality",
+            "financial precarity"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "When asked about work-life balance, I say I have a fulfilling hobby: worrying.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "irony",
+        "visualKeywords": [
+          "mountain",
+          "sand"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "corporate disposability",
+          "burnout"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-5121b3e4",
+          "text": "When asked about work-life balance, I say I have a fulfilling hobby: worrying.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "irony",
+          "visualKeywords": [
+            "mountain",
+            "sand"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691205094,
+          "conceptTags": [
+            "corporate disposability",
+            "burnout"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Our team-building activity was a trust exercise – into a layoff.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "dark humor",
+        "visualKeywords": [
+          "forest",
+          "lake"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "middle",
+        "conceptTags": [
+          "corporate disposability",
+          "betrayal"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-5b3c8f5f",
+          "text": "Our team-building activity was a trust exercise – into a layoff.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "dark humor",
+          "visualKeywords": [
+            "forest",
+            "lake"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "middle",
+          "source": "llm",
+          "createdAt": 1792691205095,
+          "conceptTags": [
+            "corporate disposability",
+            "betrayal"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "My 401k is a suggestion box for my future self.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "metaphor",
+        "visualKeywords": [
+          "desert",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "lower",
+        "conceptTags": [
+          "financial precarity",
+          "aging"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-ad7b9377",
+          "text": "My 401k is a suggestion box for my future self.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "metaphor",
+          "visualKeywords": [
+            "desert",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "lower",
+          "source": "llm",
+          "createdAt": 1792691205095,
+          "conceptTags": [
+            "financial precarity",
+            "aging"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Inheritance means someone you love had to die to pay off your debt.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "gallows humor",
+        "visualKeywords": [
+          "ocean",
+          "building"
+        ],
+        "visualAesthetic": "Cinematic",
+        "compositionHint": "top",
+        "conceptTags": [
+          "mortality",
+          "financial precarity"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-a9243b44",
+          "text": "Inheritance means someone you love had to die to pay off your debt.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "gallows humor",
+          "visualKeywords": [
+            "ocean",
+            "building"
+          ],
+          "visualAesthetic": "Cinematic",
+          "compositionHint": "top",
+          "source": "llm",
+          "createdAt": 1792691205095,
+          "conceptTags": [
+            "mortality",
+            "financial precarity"
+          ]
+        }
+      }
+    }
+  ]
+}

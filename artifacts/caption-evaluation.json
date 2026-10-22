@@ -1,0 +1,323 @@
+{
+  "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "elapsedMs": 26944,
+  "params": {
+    "mood": "dark",
+    "topic": "Surprise Me",
+    "intensity": 4
+  },
+  "results": [
+    {
+      "raw": {
+        "caption": "My birthday reminder for an ex is still set.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "understatement",
+        "visualKeywords": [
+          "city",
+          "sky"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "mortality",
+          "admin"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-489b7f9d",
+          "text": "My birthday reminder for an ex is still set.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "understatement",
+          "visualKeywords": [
+            "city",
+            "sky"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "mortality",
+            "admin"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "One year of payments: a badge of honor or a cry for help?",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "reversal",
+        "visualKeywords": [
+          "forest",
+          "water"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "financial precarity",
+          "corporate disposability"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-601c1cd9",
+          "text": "One year of payments: a badge of honor or a cry for help?",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "reversal",
+          "visualKeywords": [
+            "forest",
+            "water"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "financial precarity",
+            "corporate disposability"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Password manager: 'you're doing it wrong'",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "confession",
+        "visualKeywords": [
+          "mountain",
+          "sand"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "denial",
+          "aging"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-1d6f0d26",
+          "text": "Password manager: 'you're doing it wrong'",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "confession",
+          "visualKeywords": [
+            "mountain",
+            "sand"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "denial",
+            "aging"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Planner full of postponed tasks. Procrastination is my love language.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "understatement",
+        "visualKeywords": [
+          "architecture",
+          "coffee"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "burnout",
+          "loneliness"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-245d6ae3",
+          "text": "Planner full of postponed tasks. Procrastination is my love language.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "understatement",
+          "visualKeywords": [
+            "architecture",
+            "coffee"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "burnout",
+            "loneliness"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Employee survey: 'log in to tell us how you really feel'",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "literal reading",
+        "visualKeywords": [
+          "lake",
+          "trees"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "corporate disposability",
+          "financial precarity"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-84959a2e",
+          "text": "Employee survey: 'log in to tell us how you really feel'",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "literal reading",
+          "visualKeywords": [
+            "lake",
+            "trees"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "corporate disposability",
+            "financial precarity"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Mandatory fun: because who needs actual friends?",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "reversal",
+        "visualKeywords": [
+          "ocean",
+          "desert"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "burnout",
+          "loneliness"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-1b4151f3",
+          "text": "Mandatory fun: because who needs actual friends?",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "reversal",
+          "visualKeywords": [
+            "ocean",
+            "desert"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "burnout",
+            "loneliness"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Reunion invite: 'who's still available and not in therapy'",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "observation",
+        "visualKeywords": [
+          "city",
+          "building"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "mortality",
+          "denial"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-fe2dc2e2",
+          "text": "Reunion invite: 'who's still available and not in therapy'",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "observation",
+          "visualKeywords": [
+            "city",
+            "building"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "mortality",
+            "denial"
+          ]
+        }
+      }
+    },
+    {
+      "raw": {
+        "caption": "Website asks: where will you be in 30 years? Probably still paying off student loans.",
+        "mood": "dark",
+        "topic": "Surprise Me",
+        "intensity": 4,
+        "technique": "understatement",
+        "visualKeywords": [
+          "landscape",
+          "work"
+        ],
+        "visualAesthetic": "Cinematic",
+        "conceptTags": [
+          "financial precarity",
+          "aging"
+        ]
+      },
+      "validation": {
+        "caption": {
+          "id": "ai-f0db94f",
+          "text": "Website asks: where will you be in 30 years? Probably still paying off student loans.",
+          "mood": "dark",
+          "topic": "Surprise Me",
+          "intensity": 4,
+          "technique": "understatement",
+          "visualKeywords": [
+            "landscape",
+            "work"
+          ],
+          "visualAesthetic": "Cinematic",
+          "source": "llm",
+          "createdAt": 1792676108004,
+          "conceptTags": [
+            "financial precarity",
+            "aging"
+          ]
+        }
+      }
+    }
+  ]
+}

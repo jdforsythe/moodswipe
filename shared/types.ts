@@ -80,6 +80,12 @@ export type Photo = {
 };
 export type Layout = {
   font: string;
+  style?: string;
+  fontWeight?: number;
+  fontStyle?: string;
+  color?: string;
+  stroke?: number;
+  contrast?: number;
   fontSize: number;
   alignment: "left" | "center" | "right";
   region: string;
